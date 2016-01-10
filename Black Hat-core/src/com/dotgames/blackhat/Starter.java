@@ -13,6 +13,8 @@ public class Starter extends ApplicationAdapter {
 	@Override
 	public void create () {
 		batch = new SpriteBatch();
+		System.out.println("Working Directory = " +
+	              System.getProperty("user.dir"));
 		img = new Texture("badlogic.jpg");
 	}
 
@@ -23,5 +25,7 @@ public class Starter extends ApplicationAdapter {
 		batch.begin();
 		batch.draw(img, 0, 0);
 		batch.end();
+		
+		
 	}
 }
